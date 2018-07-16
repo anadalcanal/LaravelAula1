@@ -22,3 +22,6 @@ Route::get('/olapessoa/{name}', function($name='Estranho'){
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('paramaiusculo/{palavra}','StringsController@mai');
+Route::get('teste/{palavra}','StringsController@maiform');
